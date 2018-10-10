@@ -19,6 +19,8 @@ class Api::ExamplesController < ApplicationController
   end
 
   def page_count
+    @count = 0
+    @count += 1
     render "page_count.json.jbuilder"
   end
 end
