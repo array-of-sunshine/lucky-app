@@ -23,4 +23,14 @@ class Api::ExamplesController < ApplicationController
     @count += 1
     render "page_count.json.jbuilder"
   end
+
+  def song_lyrics
+    @lyrics = ""
+    index = 99
+    99.times do
+      @lyrics += "#{index} bottles of beer on the wall, etc etc etc "
+      index -= 1
+    end
+    render "the_song_lyrics.json.jbuilder"
+  end
 end

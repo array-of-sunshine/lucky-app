@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/random_fortune' => 'api/examples#fortune_method'
   get '/lotto_nums' => 'api/examples#lotto_action'
   get '/count' => 'api/examples#page_count'
+  get '/song' => 'api/examples#song_lyrics'
 end
