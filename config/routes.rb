@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   get '/random_fortune' => 'api/examples#fortune_method'
   get '/lotto_nums' => 'api/examples#lotto_action'
+  get '/count' => 'api/examples#page_count'
 end

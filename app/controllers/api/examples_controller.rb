@@ -17,4 +17,8 @@ class Api::ExamplesController < ApplicationController
     # show the user all 6 numbers
     render "lotto_view.json.jbuilder"
   end
+
+  def page_count
+    render "page_count.json.jbuilder"
+  end
 end
