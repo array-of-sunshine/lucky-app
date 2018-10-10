@@ -33,4 +33,9 @@ class Api::ExamplesController < ApplicationController
     end
     render "the_song_lyrics.json.jbuilder"
   end
+
+  def show_the_glasses
+    @glasses = "some people who can't see well wear glasses"
+    render "the_glasses.json.jbuilder"
+  end
 end
